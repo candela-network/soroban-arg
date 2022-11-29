@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "stellar-sdk": "^10.4.0",
+    "yargs": "^17.6.2"
+  }
+}
