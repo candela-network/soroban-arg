@@ -61,7 +61,8 @@ function handle(key, value) {
             let symbol = Object.keys(value)[0];
             let v = [{ symbol: symbol }]
             if (value[symbol] && Object.keys(value[symbol]) != 0) {
-                v.push(handle(Object.keys(value[symbol])[0], value[symbol] ))
+                let k = Object.keys(value[symbol])[0];
+                v.push(handle(k, value[symbol][k] ))
             }
             return { object: { vec: v } }
         case "unamed":
